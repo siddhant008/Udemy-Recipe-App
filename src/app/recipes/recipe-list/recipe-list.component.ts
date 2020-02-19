@@ -10,7 +10,7 @@ export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
   recipes: Recipe[] = [
     new Recipe('A test Recipe', 'This is simply a test', 'https://www.gimmesomeoven.com/wp-content/uploads/2019/08/Gambas-Al-Ajillo-Spanish-Garlic-Shrimp-Recipe-2-3-320x480.jpg'),
-    new Recipe('A test Recipe', 'This is simply a test', 'https://www.gimmesomeoven.com/wp-content/uploads/2019/08/Gambas-Al-Ajillo-Spanish-Garlic-Shrimp-Recipe-2-3-320x480.jpg')
+    new Recipe('2nd test Recipe', 'This is simply a test', 'https://www.gimmesomeoven.com/wp-content/uploads/2019/08/Gambas-Al-Ajillo-Spanish-Garlic-Shrimp-Recipe-2-3-320x480.jpg')
 
   ];
 
