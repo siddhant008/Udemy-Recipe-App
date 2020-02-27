@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+
 import {RecipeService} from '../recipes/recipe.service';
 
 @Injectable({providedIn: 'root'})
@@ -9,8 +10,9 @@ export class DataStorageService {
 
   storeRecipes() {
     const recipes = this.recipeService.getRecipes();
-    this.http.put('https://udemy-recipe-app-20b1a.firebaseio.com/recipes.json', recipes).subscribe(response => {
-      console.log(response);
+    this.http.put('https://udemy-recipe-app-20b1a.firebaseio.com/recipes.json', recipes)
+      .subscribe(response => {
+        console.log(response);
     });
   }
 }
